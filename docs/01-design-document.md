@@ -181,8 +181,8 @@
 - [x] 方案设计（本文档）
 - [x] 知识库（3个Markdown文件）
 - [x] 腾讯元器搭建指南（docs/02-yuanqi-setup-guide.md）
-- [ ] 腾讯元器Bot（待用户搭建）
-- [ ] 在线Demo（待发布）
+- [x] 腾讯元器Bot（已搭建，含多轮追问优化）
+- [x] 在线Demo（已发布：https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true）
 - [x] GitHub仓库
 
 ---
