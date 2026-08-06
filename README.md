@@ -4,6 +4,10 @@
 >
 > **FDE作品集 项目二** — 医疗行业 | 工具：腾讯元器 + 知识库RAG
 
+[![在线Demo](https://img.shields.io/badge/在线Demo-腾讯元器-00C853?style=for-the-badge&logo=tencent-qq&logoColor=white)](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)
+[![GitHub](https://img.shields.io/badge/GitHub-代码仓库-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/medical-triage-agent)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
 ## 项目简介
 
 本项目是一个智能分诊推荐助手，通过多轮对话收集患者症状信息，评估紧急程度，推荐就诊科室，并提供就诊建议。
@@ -50,7 +54,19 @@
 | 2. 痛点定位 | 挂号难/分诊不准/急诊错配/夜间无导诊 |
 | 3. 方案设计 | 腾讯元器 + 3知识库 + 多轮对话 + 合规设计 |
 | 4. AI驱动构建 | 腾讯元器零代码搭建Bot + 知识库RAG |
-| 5. 部署验证 | 腾讯元器网页发布，在线Demo可访问 |
+| 5. 部署验证 | 腾讯元器网页发布，[在线Demo](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)已上线 |
+
+## 测试效果
+
+| 输入 | 紧急程度 | 推荐科室 | 可能原因 |
+|---|---|---|---|
+| 头痛3天，伴有恶心 | 🟡 黄色 | 神经内科 | 偏头痛 / 紧张性头痛 / 高血压 |
+| 胸口剧烈疼痛30分钟，出冷汗 | 🔴 红色 | 急诊科 / 心内科 | 急性心肌梗死 / 心绞痛 / 主动脉夹层 |
+| 2岁宝宝发烧39.5度，精神不好 | 🔴 红色 | 儿科急诊 | 上呼吸道感染 / 手足口病 / 肺炎 |
+| 体检发现血压150/95，偶尔头晕 | 🟡 黄色 | 心内科 | 高血压 / 颈椎病 / 脑供血不足 |
+| 肚子疼（模糊描述）| — | Bot主动追问位置/持续时间/性质 | 多轮对话触发 |
+
+> 每次回答都包含：紧急程度 + 科室推荐 + 可能原因 + 就诊建议 + 免责声明 + 知识库引用
 
 ## 快速开始
 
@@ -64,7 +80,13 @@
 
 ### 3. 在线Demo
 
-（待发布后填写链接）
+**🩺 立即体验**：[智能分诊助手在线Demo](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)
+
+打开链接即可对话，无需注册登录。试试输入：
+- `头痛3天，伴有恶心` → 推荐神经内科
+- `胸口剧烈疼痛30分钟，出冷汗` → 红色紧急，建议立即拨打120
+- `2岁宝宝发烧39.5度` → 儿科急诊
+- `肚子疼` → Bot会追问具体位置和持续时间（多轮对话）
 
 ## 项目结构
 
