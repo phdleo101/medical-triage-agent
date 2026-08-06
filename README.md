@@ -3,8 +3,6 @@
 > [English](README_EN.md) | 中文
 
 > 基于腾讯元器平台的智能分诊推荐系统，帮助患者根据症状找到正确的就诊科室。
->
-> **FDE作品集 项目二** — 医疗行业 | 工具：腾讯元器 + 知识库RAG
 
 [![在线Demo](https://img.shields.io/badge/在线Demo-腾讯元器-00C853?style=for-the-badge&logo=tencent-qq&logoColor=white)](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)
 [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/medical-triage-agent)
@@ -48,15 +46,6 @@
 | 紧急症状识别库 | `data/knowledge/emergency_symptoms.md` | 红/黄/绿三级，10大类危急重症 |
 | 常见疾病科普库 | `data/knowledge/disease_encyclopedia.md` | 50+疾病科普，含就诊前准备建议 |
 
-## FDE方法论
-
-| 步骤 | 内容 |
-|---|---|
-| 1. 行业速学 | 调研医疗分诊AI现状、政策法规、标杆案例 |
-| 2. 痛点定位 | 挂号难/分诊不准/急诊错配/夜间无导诊 |
-| 3. 方案设计 | 腾讯元器 + 3知识库 + 多轮对话 + 合规设计 |
-| 4. AI驱动构建 | 腾讯元器零代码搭建Bot + 知识库RAG |
-| 5. 部署验证 | 腾讯元器网页发布，[在线Demo](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)已上线 |
 
 ## 测试效果
 

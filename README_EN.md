@@ -1,8 +1,6 @@
 # Medical Triage Agent
 
 > An intelligent triage recommendation system built on Tencent Yuanqi platform, helping patients find the right department based on symptoms.
->
-> **FDE Portfolio Project 2** - Healthcare | Tools: Tencent Yuanqi + Knowledge Base RAG
 
 [![Live Demo](https://img.shields.io/badge/Demo-Tencent_Yuanqi-00C853?style=for-the-badge)](https://yuanqi.tencent.com/webim/#/chat/JcPxWB?appid=2084923057113837824&experience=true)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/medical-triage-agent)
