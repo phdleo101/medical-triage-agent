@@ -1,5 +1,7 @@
 # 智能分诊Agent (Medical Triage Agent)
 
+> [English](README_EN.md) | 中文
+
 > 基于腾讯元器平台的智能分诊推荐系统，帮助患者根据症状找到正确的就诊科室。
 >
 > **FDE作品集 项目二** — 医疗行业 | 工具：腾讯元器 + 知识库RAG
