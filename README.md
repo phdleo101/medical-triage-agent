@@ -18,8 +18,10 @@
 
 - **症状采集**：多轮对话，耐心收集症状信息
 - **紧急评估**：红/黄/绿三级预警，危急值优先提示急诊
-- **科室推荐**：90+症状精准匹配就诊科室
+- **科室推荐**：220+症状精准匹配就诊科室（覆盖12大身体系统）
 - **就诊建议**：含就诊前准备和健康科普
+- **分诊报告生成**：对话结束可生成结构化「智能分诊报告」（主诉/关键信息/紧急程度/科室/可能原因/建议/预警信号/免责声明）
+- **慢病管理宣教**：14类常见慢病的长期管理要点（用药依从/监测指标/生活方式/急性加重识别/随访计划）
 - **合规设计**：不诊断、不开药、不替代医生
 
 ## 技术架构
@@ -31,9 +33,10 @@
         ↓
 症状采集 → 紧急评估 → 科室推荐 → 就诊建议
         ↑（知识库RAG）
-        ├── 症状→科室映射库（90+症状，8大部位）
+        ├── 症状→科室映射库（220+症状，12大身体系统）
         ├── 紧急症状识别库（红/黄/绿三级）
-        └── 常见疾病科普库（50+疾病）
+        ├── 常见疾病科普库（50+疾病）
+        └── 慢病管理库（14类慢病长期管理）
         ↓
 分诊报告 + 科室推荐 + 就诊建议
 ```
@@ -42,9 +45,10 @@
 
 | 知识库 | 文件 | 内容 |
 |---|---|---|
-| 症状→科室映射库 | `data/knowledge/symptom_department_mapping.md` | 90+症状，8大身体部位，含科室反查索引 |
+| 症状→科室映射库 | `data/knowledge/symptom_department_mapping.md` | 220+症状，12大身体系统，含科室反查索引 |
 | 紧急症状识别库 | `data/knowledge/emergency_symptoms.md` | 红/黄/绿三级，10大类危急重症 |
 | 常见疾病科普库 | `data/knowledge/disease_encyclopedia.md` | 50+疾病科普，含就诊前准备建议 |
+| 慢病管理库 | `data/knowledge/chronic_disease_management.md` | 14类慢病长期管理（用药/监测/生活方式/预警/随访） |
 
 
 ## 测试效果
@@ -85,12 +89,14 @@
 medical-triage-agent/
 ├── data/
 │   └── knowledge/
-│       ├── symptom_department_mapping.md  # 症状→科室映射库
+│       ├── symptom_department_mapping.md  # 症状→科室映射库（220+症状）
 │       ├── emergency_symptoms.md          # 紧急症状识别库
-│       └── disease_encyclopedia.md        # 常见疾病科普库
+│       ├── disease_encyclopedia.md        # 常见疾病科普库
+│       └── chronic_disease_management.md  # 慢病管理库
 ├── docs/
 │   ├── 01-design-document.md              # 方案设计文档
-│   └── 02-yuanqi-setup-guide.md           # 腾讯元器搭建指南
+│   ├── 02-yuanqi-setup-guide.md           # 腾讯元器搭建指南
+│   └── 03-triage-report-guide.md          # 分诊报告生成提示词与配置指南
 └── README.md
 ```
 
